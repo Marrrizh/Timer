@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таймер</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+<input type="number" class="minutes-input" min="0" max="59" placeholder="00">
+<span class="separator">:</span>
+<input type="number" class="seconds-input" min="0" max="59" placeholder="00">
+   
+<div class="display">
+    <div class="timer-digits">
+        <span class="minutes">MM</span>
+        <span class="separator">:</span>
+        <span class="seconds">SS</span>
+    </div>
+    <div class="timer-finished">Время вышло!</div>
+</div>
+
+<div class="buttons">
+    <button class="start" title="Старт">▶</button>
+    <button class="pause" title="Пауза">⏸</button>
+    <button class="clear" title="Сброс">↻</button>
+</div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
