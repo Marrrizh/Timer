@@ -22,3 +22,38 @@
     padding: 5px 10px;
     margin: 15px;
 }
+
+.buttons {
+    display: inline;
+    justify-content: center;
+}
+.start {
+display:inline-flex;
+border: 2px solid #8a8484;
+height: 40px;
+width: 40px;
+border-radius: 50px; 
+justify-content: center;  
+align-items: center;
+}
+
+
+.pause {
+display:inline-flex;
+border: 2px solid #8a8484;
+height: 40px;
+width: 40px;
+border-radius: 50px; 
+justify-content: center;  
+align-items: center;
+}
+
+.clear {
+display:inline-flex;
+border: 2px solid #8a8484;
+height: 40px;
+width: 40px;
+border-radius: 50px; 
+justify-content: center;  
+align-items: center;
+}
