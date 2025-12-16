@@ -52,6 +52,11 @@ width: 40px;
 border-radius: 50px; 
 justify-content: center;  
 align-items: center;
+transition: 0.2s;
+}
+
+.pause:active {
+ transform: scale(0.95);  
 }
 
 .clear {
@@ -62,4 +67,9 @@ width: 40px;
 border-radius: 50px; 
 justify-content: center;  
 align-items: center;
+transition: 0.2s;
+}
+
+.clear:active {
+ transform: scale(0.95);  
 }
