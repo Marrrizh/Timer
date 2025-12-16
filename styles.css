@@ -27,6 +27,7 @@
     display: inline;
     justify-content: center;
 }
+
 .start {
 display:inline-flex;
 border: 2px solid #8a8484;
@@ -35,8 +36,13 @@ width: 40px;
 border-radius: 50px; 
 justify-content: center;  
 align-items: center;
+transition: 0.2s;
+ 
 }
 
+.start:active {
+ transform: scale(0.95);  
+}
 
 .pause {
 display:inline-flex;
