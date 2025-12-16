@@ -25,8 +25,13 @@
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
+.timer-finished {
+    display: none;
+    font-size: 70px;
+}
+
 .buttons {
-    display: inline;
+    display: flex;
     justify-content: center;
 }
 
