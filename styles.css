@@ -61,3 +61,23 @@
     box-shadow: inset 3px 3px 6px rgba(0,0,0,0.2),
                 inset -3px -3px 6px rgba(255,255,255,0.7);
 }
+
+/* Готов к запуску */
+.display.ready {
+    background-color: #ffffff;
+}
+
+/* Таймер работает */
+.display.running {
+    background-color: #e8f5e9; /* светло-зелёный */
+}
+
+/* На паузе */
+.display.paused {
+    background-color: #fff3e0; /* светло-оранжевый */
+}
+
+/* Завершён */
+.display.finished {
+    background-color: #ffebee; /* светло-красный */
+}
