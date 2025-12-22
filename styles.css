@@ -69,15 +69,36 @@
 
 /* Таймер работает */
 .display.running {
-    background-color: #e8f5e9; /* светло-зелёный */
+    background-color: #e8f5e9; 
 }
 
 /* На паузе */
 .display.paused {
-    background-color: #fff3e0; /* светло-оранжевый */
+    background-color: #fff3e0; 
 }
 
 /* Завершён */
 .display.finished {
-    background-color: #ffebee; /* светло-красный */
+    background-color: #ffebee; 
+
+}
+
+.minutes-input, .seconds-input {
+    font-size: 20px;
+    width: 60px;
+    text-align: center;
+    padding: 8px;
+    border: 2px solid #8a8484;
+    border-radius: 6px;
+}
+
+.separator {
+  
+    font-size: 24px;
+    margin: 0 8px;
+}
+
+.input-form {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
 }
