@@ -8,3 +8,12 @@ const startButton=document.querySelector('.start');
 const pauseButton=document.querySelector('.pause');
 const clearButton=document.querySelector('.clear');
 
+let totalSeconds=0;
+let timerInterval=null;
+let isRunning=false;
+let isPaused=false;
+
+function UpdateDisplay() {
+    let minutes= Math.floor(totalSeconds/60);
+    let seconds=totalSeconds%60;
+}
