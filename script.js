@@ -16,4 +16,10 @@ let isPaused=false;
 function UpdateDisplay() {
     let minutes= Math.floor(totalSeconds/60);
     let seconds=totalSeconds%60;
+
+    let formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
+    let formattedSeconds = seconds < 10 ? '0' + seconds : seconds;
+    
+    Minutes.textContent = formattedMinutes;
+    Seconds.textContent = formattedSeconds; 
 }
