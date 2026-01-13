@@ -23,3 +23,10 @@ function UpdateDisplay() {
     Minutes.textContent = formattedMinutes;
     Seconds.textContent = formattedSeconds; 
 }
+
+function getTimeFromInputs() {
+    let minutes=Number(minutesInput.value);
+    let seconds=Number(secondsInput.value);
+    totalSeconds=minutes*60+seconds;
+    UpdateDisplay()
+}
