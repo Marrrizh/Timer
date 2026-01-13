@@ -30,3 +30,23 @@ function getTimeFromInputs() {
     totalSeconds=minutes*60+seconds;
     UpdateDisplay()
 }
+
+startButton.addEventListener('click', function() {
+   getTimeFromInputs();
+   if (totalSeconds>0 && isRunning===false) {
+
+     isRunning = true;
+     isPaused = false;
+
+    timerInterval = setInterval(function() {
+    totalSeconds--; 
+    UpdateDisplay();
+     if (totalSeconds <= 0) {
+        clearInterval(timerInterval);
+       
+    }
+
+    }, 1000);
+};
+
+});
