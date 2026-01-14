@@ -28,8 +28,8 @@ function getTimeFromInputs() {
     let minutes=Number(minutesInput.value);
     let seconds=Number(secondsInput.value);
     totalSeconds=minutes*60+seconds;
-    UpdateDisplay()
-}
+    UpdateDisplay();
+};
 
 startButton.addEventListener('click', function() {
    getTimeFromInputs();
@@ -50,7 +50,7 @@ startButton.addEventListener('click', function() {
     UpdateDisplay();
      if (totalSeconds <= 0) {
         clearInterval(timerInterval);
-       
+        finishTimer();
     }
 
     }, 1000);
@@ -76,7 +76,7 @@ pauseButton.addEventListener('click', function() {
 
     if (totalSeconds <= 0) {
         clearInterval(timerInterval);
-       
+        finishTimer();
     }
 
   }, 1000);
@@ -84,5 +84,45 @@ pauseButton.addEventListener('click', function() {
     Display.classList.remove('ready', 'paused', 'finished');
     Display.classList.add('running');     
     }
+   
+});
+
+function finishTimer() {
+    clearInterval(timerInterval);
+    totalSeconds = 0;
+    UpdateDisplay();
+
+    Display.classList.remove('running', 'paused', 'ready');
+    Display.classList.add('finished');
+
+ 
+timerFinished.style.display = 'block';
+
+document.querySelector('.timer-digits').style.display = 'none';
+
+isRunning = false;
+isPaused = false;
+};
+
+clearButton.addEventListener('click', function() {
+   
+   clearInterval(timerInterval);
+    
+   isRunning = false;
+   isPaused = false;
+   totalSeconds=0;
+ 
+   minutesInput.value='';
+   secondsInput.value='';
+   
+   UpdateDisplay();
+
+    Display.classList.remove('running', 'paused', 'finished');
+    Display.classList.add('ready');
+    
+    timerFinished.style.display = 'none';
+document.querySelector('.timer-digits').style.display = 'block';
+    
+    
    
 });
