@@ -38,6 +38,13 @@ startButton.addEventListener('click', function() {
      isRunning = true;
      isPaused = false;
 
+   
+    Display.classList.remove('ready', 'paused', 'finished');
+    Display.classList.add('running');
+        
+    
+    pauseButton.disabled = false;
+
     timerInterval = setInterval(function() {
     totalSeconds--; 
     UpdateDisplay();
