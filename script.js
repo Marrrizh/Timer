@@ -57,3 +57,30 @@ startButton.addEventListener('click', function() {
 };
 
 });
+
+pauseButton.addEventListener('click', function() {
+    if (isRunning = true && isPaused == false) {
+     clearInterval(timerInterval);
+     isPaused = true;
+   
+     Display.classList.remove('ready', 'running', 'finished');
+     Display.classList.add('paused');
+
+    } else if (isPaused = true && isRunning ==false) {
+      isPaused = false;
+      isRunning = true;
+
+       timerInterval = setInterval(function() {
+    totalSeconds--; 
+    UpdateDisplay();
+  }, 1000);
+
+    Display.classList.remove('ready', 'paused', 'finished');
+    Display.classList.add('running');
+ 
+
+
+        
+    }
+   
+});
